@@ -3,6 +3,7 @@
 #include<graphics.h>
 #include<process.h>
 #include<math.h>
+
 void triangle(int x1,int y1,int x2,int y2,int x3,int y3);
 void Rotate(int x1,int y1,int x2,int y2,int x3,int y3);
 void main()
@@ -16,10 +17,10 @@ void main()
     scanf("%d%d",&x2,&y2);
     printf("Enter the 3rd point for the triangle:");
     scanf("%d%d",&x3,&y3);
-    
+
     triangle(x1,y1,x2,y2,x3,y3);
     getch();
-    
+
     cleardevice();
     Rotate(x1,y1,x2,y2,x3,y3);
     setcolor(1);

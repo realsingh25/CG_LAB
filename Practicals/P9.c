@@ -2,7 +2,7 @@
 #include<conio.h>
 #include<graphics.h>
 
-main()
+void main()
 {
     int n,i,j,k,gd,gm,dy,dx;
     int x,y,temp;
@@ -13,7 +13,7 @@ main()
     clrscr();
     printf("\n\n\tEnter the no. of edges of polygon : ");
     scanf("%d",&n);
-    
+
     printf("\n\n\tEnter the cordinates of polygon :\n\n\n ");
 
     for(i=0;i<n;i++)

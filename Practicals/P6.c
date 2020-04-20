@@ -1,18 +1,20 @@
 #include<stdio.h>
 #include<conio.h>
-#include<graphics.h>                                                                                                   
+#include<graphics.h>
 #include<process.h>
 #include<math.h>
+
 int x1,y1,x2,y2,x3,y3,mx,my;
 void draw();
 void scale();
+
 void main()
 {
    int gd=DETECT,gm;
    int c;
-   initgraph(&gd,&gm,"..\\bgi");  
+   initgraph(&gd,&gm,"..\\bgi");
    printf("Enter the 1st point for the triangle:");
-   scanf("%d%d",&x1,&y1);  
+   scanf("%d%d",&x1,&y1);
    printf("Enter the 2nd point for the triangle:");
    scanf("%d%d",&x2,&y2);
    printf("Enter the 3rd point for the triangle:");
@@ -46,5 +48,5 @@ void scale()
    line(a2,b2,a3,b3);
    line(a3,b3,a1,b1);
    draw();
-   getch(); 
+   getch();
 }

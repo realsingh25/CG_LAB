@@ -2,6 +2,7 @@
 #include<conio.h>
 #include<graphics.h>
 #include<stdlib.h>
+
 void main()
 {
     int gd=DETECT,gm;

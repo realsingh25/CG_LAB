@@ -1,7 +1,8 @@
-#include"stdio.h"
-#include"conio.h"
-#include"graphics.h"
-#include"math.h"
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+#include<math.h>
+
 void dda(int,int,int,int,int,int,int,int);
 void dda(int x1,int y1,int x2,int y2,int xmin,int ymin,int xmax,int ymax)
 {
@@ -28,6 +29,8 @@ void dda(int x1,int y1,int x2,int y2,int xmin,int ymin,int xmax,int ymax)
         y=y+dy;
     }
 }
+
+
 void main()
 {
     int n,gd,gm,x1,x2,y1,y2,xRec,yRec,b1,b2,b3,b4,l,b,yMin,yMax,xMin,xMax;
@@ -104,12 +107,10 @@ void main()
         case 1: if(x2>=xMin && x2<=xMax && y2>=yMin &&    y2<=yMax)
                 {
                     dda(x1,y1,x2,y2,xMin,yMin,xMax,yMax);
-
                 }
                 else
                 {
                     dda(x2,y2,x1,y1,xMin,yMin,xMax,yMax);
-
                 }
                 break;
         case 2: line(x1,y1,x2,y2);
